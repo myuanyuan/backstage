@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 初始化，和app.js文件里对应 -->
+<html lang="en" ng-app="AngularBackage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular backstage</title>
+  <link rel="stylesheet" href="/src/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="/src/styles/style.css" />
+</head>
+<body>
+  <div class="container-fluid">
+    <ng-view></ng-view>
+  </div>
+
+  <!-- libs -->
+  <script src="/src/scripts/libs/jquery.min.js"></script>
+  <script src="/src/scripts/libs/bootstrap.min.js"></script>
+  <script src="/src/scripts/libs/angular.min.js"></script>
+  <script src="/src/scripts/libs/angular-route.min.js"></script>
+  <!-- <script src="/src/scripts/libs/jquery.dataTables.min.js"></script> -->
+  <!-- <script src="/src/scripts/libs/jquery.dataTables.min.css"></script> -->
+
+
+  <!-- app.js   -->
+  <script src="/src/scripts/app.js"></script>
+
+
+  <!-- ctrl -->
+  <script src="/src/scripts/util/common.js"></script>
+  <script src="/src/scripts/appCtrl.js"></script>
+  <script src="/src/scripts/appService.js"></script>
+  <script src="/src/scripts/headerDirective.js"></script>
+  <script src="/src/scripts/views/sideService.js"></script>
+  <script src="/src/scripts/sideDirective.js"></script>
+  <script src="/src/scripts/creatlist.js"></script>
+  <script src="/src/scripts/views/sideCtrl.js"></script>
+  <script src="/src/scripts/views/mainCtrl.js"></script>
+
+
+</body>
+</html>

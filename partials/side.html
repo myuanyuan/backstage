@@ -1,0 +1,20 @@
+<aside>
+        <div id="sidebar" class="nav-collapse">
+           <ul class="sidebar-menu" id="nav-accordion">
+              <li ng-repeat='item in items' class="sub-menu" ng-click="listswitch($index)">
+                 <a href="javascript:;">
+                 <i class="fa {{item.iclass}}"></i>
+                 <span>{{item.tit}}</span>
+                 <span class="label {{item.spanclass}} span-sidebar">{{item.num}}</span>
+                 </a>
+                 <ul class="sub" ng-if="listshow[$index]">
+                    <li><a href="#/main">{{item.subitem0}}</a></li>
+                    <li><a href="#/main">{{item.subitem1}}</a></li>
+                    <li><a href="#/main">{{item.subitem2}}</a></li>
+                    <li><a href="#/main">{{item.subitem3}}</a></li>
+                 </ul>
+              </li>
+
+           </ul>
+        </div>
+     </aside>

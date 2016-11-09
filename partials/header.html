@@ -1,0 +1,42 @@
+<header class="header white-bg">
+      <div class="sidebar-toggle-box">
+          <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-list"></span>
+          </button>
+      </div>
+      <a href="#/main" class="logo">
+          hello
+          <span>
+              myy
+            </span>
+      </a>
+
+      <div class="top-nav ">
+          <ul class="nav pull-right top-menu">
+              <li>
+                  <input ng-model='search.search' type="text" class="form-control search">
+              </li>
+              <li class="dropdown">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#/main">
+                      <img alt="" src="images/myy.jpg" style="width:29px; height:29px;">
+                      <span class="username">
+                    Myy
+                  </span>
+                      <b class="caret">
+                      </b>
+                  </a>
+                  <ul class="dropdown-menu extended logout">
+                      <li class="log-arrow-up">
+                      </li>
+                      <li ng-repeat='nav in navList'>
+                          <a href="#/main">
+                              <i class=" fa">
+                              </i>
+                              {{nav}}
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </header>
